@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 import java.util.ArrayList;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import modelo.Colores;
@@ -13,24 +14,38 @@ public class ListasTest {
 
 	Lista lista= new Lista();
 	
-	@Test
-	public void borrarColoresTest() {
+	@Before
+	public void rellenarLista(){
+		lista.addLista(Colores.amarillo);
+		lista.addLista(Colores.amarillo);
 		lista.addLista(Colores.amarillo);
 		lista.addLista(Colores.azul);
+	}
+	
+	@Test
+	public void testBorrarColores() {
 		ArrayList<Integer> posiciones= new ArrayList<>();
 		posiciones.add(0);
+		posiciones.add(1);
+		posiciones.add(2);
 		lista.borrarColores(posiciones);
 		assertEquals(1, lista.getLista().size());
 	}
 	
 	@Test
-	public void recorrerAutomaticoTest() {
-		fail("Not yet implemented");
+	public void testRecorrerAutomatico() {
+		ArrayList<Integer> posiciones= new ArrayList<>();
+		posiciones.add(0);
+		posiciones.add(1);
+		posiciones.add(2);
+		assertEquals(posiciones, lista.recorrerAutomatico());
 	}
 	
 	@Test
-	public void busquedaColorTest() {
-		fail("Not yet implemented");
+	public void testBusquedaColor() {
+		ArrayList<Integer>posiciones= new ArrayList<>();
+		posiciones.add(3);
+		assertEquals(posiciones, lista.busquedaColor(Colores.azul));
 	}
 	
 }
