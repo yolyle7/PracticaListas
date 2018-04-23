@@ -8,6 +8,7 @@ public class Cola implements Coleable{
 
 	public Cola(LinkedList<Colores> cola) {
 		super();
+		assert cola!=null: "cola nula";
 		this.cola = cola;
 	}
 	
