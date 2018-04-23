@@ -18,7 +18,7 @@ class ColoresTest {
 		repetidos.add(Colores.azul);
 		Colores instancia=new Colores(repetidos);	
 		for (int i = 0; i < 100; i++) {
-			assertNotEquals("azul", instancia[i]);
+			assertNotEquals("azul", instancia);
 		}
 	}
 }
