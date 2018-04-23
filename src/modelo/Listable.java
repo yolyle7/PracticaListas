@@ -19,7 +19,7 @@ public interface Listable {
 	
 	/**
 	 * recorre la lista y devuelve las posiciones con colores repetidos en tres posiciones seguidas
-	 * @return
+	 * @return numero de monedas
 	 */
 	public ArrayList<Integer> recorrerAutomatico();
 	
