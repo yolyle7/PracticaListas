@@ -8,7 +8,7 @@ public class Pila  implements Pilable{
 	
 	
 	public Pila() {
-		super();
+		super(gt);
 	}
 	
 
