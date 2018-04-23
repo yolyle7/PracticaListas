@@ -5,10 +5,10 @@ import java.util.LinkedList;
 public class Cola implements Coleable{
 	
 	private LinkedList<Colores> cola;
+	
 
 	public Cola(LinkedList<Colores> cola) {
 		super();
-		assert cola!=null: "cola nula";
 		this.cola = cola;
 	}
 	
@@ -24,16 +24,16 @@ public class Cola implements Coleable{
 		this.cola = cola;
 	}
 
+
 	@Override
 	public void enColar(Colores color) {
-		// TODO Auto-generated method stub
+		this.cola.addLast(color);
 		
 	}
 
 	@Override
 	public Colores desEncolar() {
-		// TODO Auto-generated method stub
-		return null;
+		return this.cola.removeFirst();
 	}
 
 	
