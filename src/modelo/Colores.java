@@ -32,9 +32,23 @@ public enum Colores implements Coloreable{
 		return this.nombre;
 	}
 
+
 	@Override
 	public Colores sortearColor(ArrayList<Colores> repetidos) {
-		// TODO Auto-generated method stub
-		return null;
+		boolean salir= true;
+		int i=0;
+		do{
+			i = (int) (Math.random()*Colores.values().length)+1;
+			
+			salir=true;
+			for (int k = 0; k < repetidos.size(); k++) {
+				if(Colores.values()[i].equals(repetidos.get(k))){
+					salir= false;
+				}
+			}
+			
+		}while(!salir);
+	
+		return Colores.values()[i];
 	}
 }
