@@ -37,5 +37,5 @@ public enum Colores implements Coloreable{
 		// TODO Auto-generated method stub
 		return null;
 	}
-	//
+
 }
