@@ -1,5 +1,6 @@
 package modelo;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 
 public class Datos {
@@ -54,5 +55,23 @@ public class Datos {
 
 	public LinkedList<Colores> generarCola() {
 		return null;
+	}
+	
+	public Colores sortearColor(ArrayList<Colores> repetidos) {
+		boolean salir= true;
+		int i=0;
+		do{
+			i = (int) (Math.random()*Colores.values().length)+1;
+			
+			salir=true;
+			for (int k = 0; k < repetidos.size(); k++) {
+				if(Colores.values()[i].equals(repetidos.get(k))){
+					salir= false;
+				}
+			}
+			
+		}while(!salir);
+	
+		return Colores.values()[i];
 	}
 }

@@ -25,6 +25,13 @@ public class Prueba {
 		posiciones.add(1);
 		System.out.println(lista.borrarColores(posiciones));*/
 		
+		Datos datos= new Datos();
+		ArrayList<Colores> repetidos= new ArrayList<Colores>();
+		repetidos.add(Colores.azul);
+		repetidos.add(Colores.azul);
+		for (int i = 0; i < 100; i++) {
+		//	sortearColor(repetidos);
+		}
 		
 
 	}
