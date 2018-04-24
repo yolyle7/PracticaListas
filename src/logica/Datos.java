@@ -8,6 +8,7 @@ import modelo.Cola;
 import modelo.Colores;
 import modelo.Lista;
 import modelo.Pila;
+import utiles.Constantes;
 
 public class Datos {
 
@@ -59,13 +60,16 @@ public class Datos {
 		int largo= (this.pilaUno.getPila().size()+this.pilaDos.getPila().size())/2;
 		LinkedList<Colores> pilaParcial= new LinkedList<Colores>();
 		rellenarPilaParcial(pilaParcial);
-		System.out.println("pilaparcial rellenada: "+pilaParcial.toString());
 		desordenarColores(pilaParcial);
-		System.out.println("pilaParcial rellenada y desordenada: "+pilaParcial.toString());
 		rellenarDeNuevoPilas(pilaParcial, largo);
 		
 		
 	}
+	
+	/**
+	 * Desordena una lista de colores para entrarlas en las pilas y que estén desordenadas.
+	 * @param pilaParcial
+	 */
 	private void desordenarColores(LinkedList<Colores> pilaParcial){
 
 		for (int i = 0; i < 100; i++) {
@@ -74,6 +78,12 @@ public class Datos {
 			pilaParcial.add(color);
 		}
 	}
+	
+	/**
+	 * Rellena las pilas (la primera es la corta en caso de impar) con los colores de la pila parcial
+	 * @param pilaParcial
+	 * @param largo
+	 */
 	private void rellenarDeNuevoPilas(LinkedList<Colores>pilaParcial,int largo){
 		int numeroParcial=0;
 		for (Iterator iterator = pilaParcial.iterator(); iterator.hasNext();) {
@@ -89,6 +99,10 @@ public class Datos {
 		}
 	}
 	
+	/**
+	 * Rellena una pila parcial con las dos pilas para poder desordenarla.
+	 * @param pilaParcial
+	 */
 	private void rellenarPilaParcial(LinkedList<Colores>pilaParcial)
 	{
 
@@ -107,13 +121,24 @@ public class Datos {
 	}
 
 	/**
-	 * Hacer generarCol()
+	 * Una cola de diez posiciones con colores aleatorios
 	 * @return
 	 */
 	public LinkedList<Colores> generarCola() {
-		return null;
+		
+		LinkedList<Colores> ColaParcial=new LinkedList<Colores>();
+		for (int i = 0; i < Constantes.tamanioCola; i++) {
+			int aleatorio= (int)(Math.random()*Constantes.numeroColores);
+			ColaParcial.add(Constantes.colores[aleatorio]);
+		}
+		return ColaParcial;
 	}
 	
+	/**
+	 * Devuelve un color teniendo en cuenta que no puede devolver un repetido
+	 * @param repetidos
+	 * @return
+	 */
 	public Colores sortearColor(ArrayList<Colores> repetidos) {
 		boolean salir= true;
 		int index=0;

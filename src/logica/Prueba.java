@@ -47,6 +47,9 @@ public class Prueba {
 	
 		datos.equilibrarPilas();
 		System.out.println(datos.getPilaUno().getPila().toString()+"\n"+datos.getPilaDos().getPila().toString());*/
+		
+		/*Datos datos= new Datos();
+		System.out.println(datos.getCola().getCola().toString());*/
 	
 	}
 	
