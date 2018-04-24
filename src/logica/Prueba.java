@@ -1,7 +1,9 @@
-package modelo;
+package logica;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+
+import modelo.Colores;
 
 public class Prueba {
 
@@ -25,23 +27,27 @@ public class Prueba {
 		posiciones.add(1);
 		System.out.println(lista.borrarColores(posiciones));*/
 		
-		Datos datos= new Datos();
-		/*ArrayList<Colores> repetidos= new ArrayList<Colores>();
+		/*Datos datos= new Datos();
+		ArrayList<Colores> repetidos= new ArrayList<Colores>();
+		repetidos.add(Colores.rojo);
 		repetidos.add(Colores.azul);
-		repetidos.add(Colores.azul);
+		repetidos.add(Colores.naranja);
+		repetidos.add(Colores.amarillo);
+		repetidos.add(Colores.verde);
 		for (int i = 0; i < 100; i++) {
 			System.out.println((datos.sortearColor(repetidos)).toString());
 		}*/
 		
+		/*Datos datos= new Datos();
 		datos.getPilaUno().apilar(Colores.rojo);
 		datos.getPilaUno().apilar(Colores.azul);
 		datos.getPilaDos().apilar(Colores.amarillo);
 		datos.getPilaDos().apilar(Colores.rojo);
+		datos.getPilaDos().apilar(Colores.naranja);
 	
 		datos.equilibrarPilas();
+		System.out.println(datos.getPilaUno().getPila().toString()+"\n"+datos.getPilaDos().getPila().toString());*/
 	
-		//la habia cagado, pero tranquis que ya va
-
 	}
 	
 }
