@@ -29,11 +29,15 @@ public class Lista implements Listable{
 	
 	@Override
 	public int borrarColores(ArrayList<Integer> posiciones) {
+		int monedas=0;
 		
 		for (int i = 0; i < posiciones.size(); i++) {
 			this.lista.remove(posiciones.get(i));
+			monedas++;
 		}
-		return posiciones.size();
+		
+		
+		return monedas;
 	}
 
 	@Override
