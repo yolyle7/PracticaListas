@@ -31,12 +31,14 @@ public class Pila implements Pilable {
 		return this.pila.removeFirst();
 	}
 	
-	//rellena una pila con otra directamente
+	//rellena una pila con otra directamente. Lo usaba en equilibrarPila antiguamente pero ahora uso Iterator
+	//Si quieres usarlo debería estar en privado y hacer otro metodo en publico que lo utilice.
+	//por la privacidad y esas cosas que se dicen (el de abajo tambien)
 	public Collection getCollection(){
 		return this.pila;
 	}
 	
-	//borra una pila completa (solo los datos)
+	//borra una pila completa (solo los datos).
 	public void removeCollection(){
 		this.pila.removeAll(this.pila);
 	}

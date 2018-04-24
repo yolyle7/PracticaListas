@@ -71,7 +71,7 @@ public class Datos {
 		int numeroParcial=0;
 		for (Iterator iterator = pilaParcial.iterator(); iterator.hasNext();) {
 			Colores color = (Colores) iterator.next();
-			if(numeroParcial<=largo){
+			if(numeroParcial<largo){
 				this.pilaUno.apilar(color);
 				
 			}
@@ -85,11 +85,18 @@ public class Datos {
 	private void rellenarPilaParcial(LinkedList<Colores>pilaParcial)
 	{
 
-		pilaParcial.addAll(this.pilaUno.getCollection());
-		pilaUno.removeCollection();
+		for (Iterator iterator = pilaUno.getPila().iterator(); iterator.hasNext();) {
+			Colores colores = (Colores) iterator.next();
+			pilaParcial.add(pilaUno.getPila().getFirst());
+			iterator.remove();
+		}
 		
-		pilaParcial.addAll(this.pilaDos.getCollection());
-		pilaUno.removeCollection();
+		for (Iterator iterator = pilaDos.getPila().iterator(); iterator.hasNext();) {
+			Colores colores = (Colores) iterator.next();
+			pilaParcial.add(pilaDos.getPila().getFirst());
+			iterator.remove();
+			
+		}
 	}
 
 	public LinkedList<Colores> generarCola() {
