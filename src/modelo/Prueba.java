@@ -40,7 +40,7 @@ public class Prueba {
 	
 		datos.equilibrarPilas();
 	
-		
+		//la habia cagado, pero tranquis que ya va
 
 	}
 	
