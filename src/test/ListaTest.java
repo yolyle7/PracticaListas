@@ -10,7 +10,7 @@ import org.junit.Test;
 import modelo.Colores;
 import modelo.Lista;
 
-public class ListasTest {
+public class ListaTest {
 
 	Lista lista= new Lista();
 	
@@ -28,8 +28,7 @@ public class ListasTest {
 		posiciones.add(0);
 		posiciones.add(1);
 		posiciones.add(2);
-		lista.borrarColores(posiciones);
-		assertEquals(1, lista.getLista().size());
+		assertEquals(3,lista.borrarColores(posiciones) );
 	}
 	
 	@Test

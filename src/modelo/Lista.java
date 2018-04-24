@@ -1,3 +1,4 @@
+
 package modelo;
 
 import java.util.ArrayList;
@@ -66,7 +67,5 @@ public class Lista implements Listable{
 		return posiciones;
 	}
 
-	
-
-
 }
+

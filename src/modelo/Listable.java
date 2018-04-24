@@ -11,7 +11,8 @@ public interface Listable {
 	public void addLista(Colores color);
 	
 	/**
-	 * Borra los colores en las posiciones que se pasan por parámetro
+	 * Borra los colores en las posiciones que se pasan por parámetro. Devuelve el número de monedas que hemos obtenido 
+	 * al borrar los colores
 	 * @param posiciones
 	 * @return
 	 */
