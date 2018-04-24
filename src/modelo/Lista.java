@@ -55,7 +55,7 @@ public class Lista implements Listable{
 		ArrayList<Integer> posiciones = new ArrayList<Integer>();
 		
 		for (int i = 0; i < lista.size(); i++) {
-			if(lista.contains(color)){
+			if(lista.get(i).equals(color)){
 				posiciones.add(i);
 			}
 		}
