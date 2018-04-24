@@ -10,7 +10,7 @@ import org.junit.Test;
 import modelo.Colores;
 import modelo.Lista;
 
-public class ListasTest {
+public class ListaTest {
 
 	Lista lista= new Lista();
 	
