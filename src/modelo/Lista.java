@@ -9,6 +9,7 @@ public class Lista implements Listable{
 	
 	public Lista(){
 		super();
+		this.lista=new LinkedList<Colores>();
 	}
 	
 	
@@ -22,8 +23,7 @@ public class Lista implements Listable{
 
 	@Override
 	public void addLista(Colores color) {
-		lista.add(color);
-		
+		this.lista.add(color);
 	}
 	
 	

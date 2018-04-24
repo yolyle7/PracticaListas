@@ -8,6 +8,7 @@ public class Pila implements Pilable {
 
 	public Pila() {
 		super();
+		this.pila= new LinkedList<Colores>();
 	}
 
 	public LinkedList<Colores> getPila() {
