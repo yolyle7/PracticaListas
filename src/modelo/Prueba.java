@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package modelo;
 
 import java.util.ArrayList;
@@ -32,3 +33,17 @@ public class Prueba {
 	
 	
 }
+=======
+package modelo;
+
+public class Prueba {
+	public static void main(String[] args) {
+		Lista instancia = new Lista();
+		instancia.addLista(Colores.amarillo);
+		instancia.addLista(Colores.naranja);
+		instancia.addLista(Colores.naranja);
+		instancia.addLista(Colores.azul);
+		System.out.println(instancia.busquedaColor(Colores.naranja));
+	}
+}
+>>>>>>> b26a3e92c82ea62f77df815f56fb44ad73760a40
