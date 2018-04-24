@@ -1,6 +1,7 @@
 package test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import junit.*;
 
 import java.util.ArrayList;
 
