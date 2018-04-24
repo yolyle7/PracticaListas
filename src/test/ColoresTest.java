@@ -17,3 +17,5 @@ class ColoresTest {
 			assertNotEquals(azul, repetidos); 
 			
 		}
+	}*/
+}

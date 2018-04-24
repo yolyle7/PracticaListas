@@ -1,5 +1,6 @@
 package modelo;
 
+import java.util.Collection;
 import java.util.LinkedList;
 
 public class Pila implements Pilable {
@@ -21,13 +22,23 @@ public class Pila implements Pilable {
 
 	@Override
 	public void apilar(Colores color) {
-		this.pila.addLast(color);
+		this.pila.addFirst(color);
 
 	}
 
 	@Override
 	public Colores desApilar() {
-		return this.pila.removeLast();
+		return this.pila.removeFirst();
+	}
+	
+	//rellena una pila con otra directamente
+	public Collection getCollection(){
+		return this.pila;
+	}
+	
+	//borra una pila completa (solo los datos)
+	public void removeCollection(){
+		this.pila.removeAll(this.pila);
 	}
 
 }
