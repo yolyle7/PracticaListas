@@ -16,7 +16,7 @@ class ColoresTest {
 	void testSortearColor() {
 		repetidos.add(Colores.azul);
 		for (int i = 0; i < 100; i++) {
-			assertNotEquals(azul, repetidos);
+			assertNotEquals(azul, repetidos); 
 			
 		}
 	}
