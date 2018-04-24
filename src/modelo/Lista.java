@@ -5,7 +5,7 @@ import java.util.LinkedList;
 
 public class Lista implements Listable{
 	
-	private LinkedList<Colores> lista;
+	private LinkedList<Colores> lista = new LinkedList<Colores>();
 	
 	public Lista(){
 		super();
@@ -40,7 +40,7 @@ public class Lista implements Listable{
 	public ArrayList<Integer> recorrerAutomatico() {
 		 ArrayList<Integer> posiciones = new  ArrayList<Integer>();
 		
-		for (int i = 0; i < lista.size()-2; i++) {
+		for (int i = 0; i < lista.size()-3; i++) {
 			if((lista.get(i).equals(lista.get(i+1))) && ((lista.get(i+1))).equals(lista.get(i+2))){
 				posiciones.add(i);
 				posiciones.add(i+1);
