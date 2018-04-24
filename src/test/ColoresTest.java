@@ -7,21 +7,13 @@ import java.util.ArrayList;
 import modelo.Colores;
 
 class ColoresTest {
-	
 	ArrayList<Colores> repetidos = new ArrayList<>();
-
+	Colores azul = Colores.azul;
 
 	/*@Test
 	void testSortearColor() {
 		repetidos.add(Colores.azul);
-		Colores instancia=new Colores(repetidos);	
 		for (int i = 0; i < 100; i++) {
-			assertNotEquals("azul", instancia);
+			assertNotEquals(azul, repetidos); 
+			
 		}
-	}*/
-}
-//Arraylist repetidos;
-//repetidos.add(colores.azul);
-//instancia.sortearcolor(repetidos);
-//for i=100;
-//nunca salga el azul. assertEquals
