@@ -13,6 +13,7 @@ import java.awt.Color;
 
 public class panelUno extends JPanel {
 	private JTextField textField;
+	private JTextField txtMensaje;
 
 	/**
 	 * Create the panel.
@@ -22,18 +23,22 @@ public class panelUno extends JPanel {
 		setLayout(null);
 
 		JPanel cola = new JPanel();
+		cola.setBackground(Color.WHITE);
 		cola.setBounds(162, 51, 393, 25);
 		add(cola);
 
 		JPanel pilaUno = new JPanel();
+		pilaUno.setBackground(Color.WHITE);
 		pilaUno.setBounds(162, 113, 322, 25);
 		add(pilaUno);
 
 		JPanel pilaDos = new JPanel();
+		pilaDos.setBackground(Color.WHITE);
 		pilaDos.setBounds(162, 149, 322, 25);
 		add(pilaDos);
 
 		JPanel lista = new JPanel();
+		lista.setBackground(Color.WHITE);
 		lista.setBounds(183, 221, 449, 125);
 		add(lista);
 
@@ -76,6 +81,11 @@ public class panelUno extends JPanel {
 		Icon iconoEscalado = new ImageIcon(imgEscalada);
 		lblIconoMonedas.setIcon(iconoEscalado);
 		add(lblIconoMonedas);
+		
+		txtMensaje = new JTextField();
+		txtMensaje.setBounds(376, 400, 334, 40);
+		add(txtMensaje);
+		txtMensaje.setColumns(10);
 
 	}
 }
