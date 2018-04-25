@@ -23,7 +23,7 @@ public class Cola implements Coleable{
 	public void setCola(LinkedList<Colores> cola) {
 		this.cola = cola;
 	}
-
+//lol
 
 	@Override
 	public void enColar(Colores color) {

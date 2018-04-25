@@ -1,3 +1,4 @@
+
 package modelo;
 
 import java.util.ArrayList;
@@ -5,7 +6,7 @@ import java.util.LinkedList;
 
 public class Lista implements Listable{
 	
-	private LinkedList<Colores> lista;
+	private LinkedList<Colores> lista = new LinkedList<Colores>();
 	
 	public Lista(){
 		super();
@@ -29,18 +30,22 @@ public class Lista implements Listable{
 	
 	@Override
 	public int borrarColores(ArrayList<Integer> posiciones) {
+		int monedas=0;
 		
 		for (int i = 0; i < posiciones.size(); i++) {
 			this.lista.remove(posiciones.get(i));
+			monedas++;
 		}
-		return posiciones.size();
+		
+		
+		return monedas;
 	}
 
 	@Override
 	public ArrayList<Integer> recorrerAutomatico() {
 		 ArrayList<Integer> posiciones = new  ArrayList<Integer>();
 		
-		for (int i = 0; i < lista.size()-2; i++) {
+		for (int i = 0; i < lista.size()-3; i++) {
 			if((lista.get(i).equals(lista.get(i+1))) && ((lista.get(i+1))).equals(lista.get(i+2))){
 				posiciones.add(i);
 				posiciones.add(i+1);
@@ -55,14 +60,12 @@ public class Lista implements Listable{
 		ArrayList<Integer> posiciones = new ArrayList<Integer>();
 		
 		for (int i = 0; i < lista.size(); i++) {
-			if(lista.contains(color)){
+			if(lista.get(i).equals(color)){
 				posiciones.add(i);
 			}
 		}
 		return posiciones;
 	}
 
-	
-
-
 }
+

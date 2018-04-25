@@ -5,7 +5,7 @@ package modelo;
 import java.awt.Color;
 import java.util.ArrayList;
 
-public enum Colores implements Coloreable{
+public enum Colores{
 
 	rojo(Color.red, "rojo"), amarillo(Color.YELLOW, "amarillo"), azul(Color.BLUE, "azul"), verde(Color.GREEN,
 			"verde"), naranja(Color.orange, "naranja");
@@ -34,23 +34,4 @@ public enum Colores implements Coloreable{
 		return this.nombre;
 	}
 
-
-	@Override
-	public Colores sortearColor(ArrayList<Colores> repetidos) {
-		boolean salir= true;
-		int i=0;
-		do{
-			i = (int) (Math.random()*Colores.values().length)+1;
-			
-			salir=true;
-			for (int k = 0; k < repetidos.size(); k++) {
-				if(Colores.values()[i].equals(repetidos.get(k))){
-					salir= false;
-				}
-			}
-			
-		}while(!salir);
-	
-		return Colores.values()[i];
-	}
 }
