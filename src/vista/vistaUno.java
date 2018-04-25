@@ -65,11 +65,11 @@ public class vistaUno extends JFrame {
 		btnJugar.setBackground(new Color(153, 204, 255));
 		getContentPane().add(btnJugar, BorderLayout.SOUTH);
 		
-		JLabel llbIcono = new JLabel("");
-		llbIcono.setHorizontalAlignment(SwingConstants.CENTER);
-		llbIcono.setIcon(new ImageIcon("C:/Users/yolyl/eclipse-workspace/vista colores/src/img/juegoColores.png"));
-		llbIcono.setBounds(189, 72, 225, 225);
-		getContentPane().add(llbIcono, BorderLayout.CENTER);
+		JLabel lblIcono = new JLabel("");
+		lblIcono.setHorizontalAlignment(SwingConstants.CENTER);
+		lblIcono.setIcon(new ImageIcon("C:/Users/yolyl/eclipse-workspace/vista colores/src/img/giphy7.gif"));
+		lblIcono.setBounds(189, 72, 225, 225);
+		getContentPane().add(lblIcono, BorderLayout.CENTER);
 		
 		JLabel lblJuegoPicoli = new JLabel("Juego PICOLI");
 		lblJuegoPicoli.setHorizontalAlignment(SwingConstants.CENTER);

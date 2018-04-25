@@ -5,10 +5,12 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 import java.awt.Image;
+import java.awt.image.BufferedImage;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import java.awt.Font;
+import java.awt.Graphics;
 import java.awt.Color;
 
 public class panelUno extends JPanel {
@@ -74,14 +76,14 @@ public class panelUno extends JPanel {
 
 		JLabel lblIconoMonedas = new JLabel("");
 		lblIconoMonedas.setBounds(27, 377, 67, 63);
-	
+
 		ImageIcon imgIcon = new ImageIcon("C:/Users/yolyl/eclipse-workspace/vista colores/src/img/iconoMonedas.png");
 		Image imgEscalada = imgIcon.getImage().getScaledInstance(lblIconoMonedas.getWidth(),
-		lblIconoMonedas.getHeight(), Image.SCALE_SMOOTH);
+				lblIconoMonedas.getHeight(), Image.SCALE_SMOOTH);
 		Icon iconoEscalado = new ImageIcon(imgEscalada);
 		lblIconoMonedas.setIcon(iconoEscalado);
 		add(lblIconoMonedas);
-		
+
 		txtMensaje = new JTextField();
 		txtMensaje.setBounds(376, 400, 334, 40);
 		add(txtMensaje);
