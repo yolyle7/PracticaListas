@@ -67,7 +67,7 @@ public class vistaUno extends JFrame {
 		
 		JLabel lblIcono = new JLabel("");
 		lblIcono.setHorizontalAlignment(SwingConstants.CENTER);
-		lblIcono.setIcon(new ImageIcon("C:/Users/yolyl/eclipse-workspace/vista colores/src/img/giphy7.gif"));
+		lblIcono.setIcon(new ImageIcon("D:/Desktop/modulo/Primero/Programación/workspaceTerEval/PracticaListas/src/img/giphy7.gif"));
 		lblIcono.setBounds(189, 72, 225, 225);
 		getContentPane().add(lblIcono, BorderLayout.CENTER);
 		
