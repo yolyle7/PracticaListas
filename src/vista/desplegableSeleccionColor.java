@@ -16,6 +16,8 @@ import javax.swing.DefaultComboBoxModel;
 public class desplegableSeleccionColor extends JFrame {
 
 	private JPanel contentPane;
+	private JComboBox comboBox;
+	private JPanel panel;
 
 	/**
 	 * Launch the application.
@@ -45,14 +47,14 @@ public class desplegableSeleccionColor extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JPanel panel = new JPanel();
+		panel = new JPanel();
 		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		panel.setBounds(10, 11, 196, 58);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		panel.setBackground(new Color(153, 204, 255));
 		
-		JComboBox comboBox = new JComboBox();
+		comboBox = new JComboBox();
 		//estos colores son de ejemplo para probar como queda. 
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Rojo", "Azul", "Verde"}));
 		comboBox.setName("");
@@ -63,4 +65,30 @@ public class desplegableSeleccionColor extends JFrame {
 		comboBox.setBounds(10, 11, 175, 36);
 		panel.add(comboBox);
 	}
+
+	public JPanel getContentPane() {
+		return contentPane;
+	}
+
+	public void setContentPane(JPanel contentPane) {
+		this.contentPane = contentPane;
+	}
+
+	public JComboBox getComboBox() {
+		return comboBox;
+	}
+
+	public void setComboBox(JComboBox comboBox) {
+		this.comboBox = comboBox;
+	}
+
+	public JPanel getPanel() {
+		return panel;
+	}
+
+	public void setPanel(JPanel panel) {
+		this.panel = panel;
+	}
+	
+	
 }

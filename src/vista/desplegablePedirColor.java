@@ -20,6 +20,8 @@ import java.awt.ComponentOrientation;
 public class desplegablePedirColor extends JFrame {
 
 	private JPanel contentPane;
+	private JComboBox comboBox;
+	private JPanel panel;
 
 	/**
 	 * Launch the application.
@@ -42,28 +44,58 @@ public class desplegablePedirColor extends JFrame {
 	 */
 	public desplegablePedirColor() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 229, 208);
+		setBounds(100, 100, 397, 337);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 153));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JPanel panel = new JPanel();
+		panel = new JPanel();
 		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		panel.setBounds(10, 11, 196, 58);
+		panel.setBounds(37, 13, 290, 58);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		panel.setBackground(new Color(153, 204, 255));
 		
+<<<<<<< HEAD
 		JComboBox comboBox = new JComboBox();
+=======
+		comboBox = new JComboBox(); 
+>>>>>>> refs/remotes/upstream/master
 		comboBox.setModel(new DefaultComboBoxModel(new Constantes().colores));
 		comboBox.setName("");
 		comboBox.setBackground(new Color(245, 255, 250));
 		comboBox.setForeground(new Color(0, 0, 102));
 		comboBox.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 20));
 		comboBox.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		comboBox.setBounds(10, 11, 175, 36);
+		comboBox.setBounds(10, 11, 268, 36);
 		panel.add(comboBox);
 	}
+
+	public JPanel getContentPane() {
+		return contentPane;
+	}
+
+	public void setContentPane(JPanel contentPane) {
+		this.contentPane = contentPane;
+	}
+
+	public JComboBox getComboBox() {
+		return comboBox;
+	}
+
+	public void setComboBox(JComboBox comboBox) {
+		this.comboBox = comboBox;
+	}
+
+	public JPanel getPanel() {
+		return panel;
+	}
+
+	public void setPanel(JPanel panel) {
+		this.panel = panel;
+	}
+	
+	
 }

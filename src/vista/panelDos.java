@@ -10,6 +10,11 @@ import javax.swing.SwingConstants;
 
 public class panelDos extends JPanel {
 
+	private JButton button;
+	private JButton btnPedirColor;
+	private JButton btnBarajarPilas;
+	private JButton btnBorrarcolor;
+	
 	/**
 	 * Create the panel.
 	 */
@@ -18,7 +23,7 @@ public class panelDos extends JPanel {
 		setBorder(null);
 		setLayout(null);
 		
-		JButton button = new JButton("Seleccion Color");
+		button = new JButton("Seleccion Color");
 		button.setForeground(new Color(0, 0, 102));
 		button.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		button.setBackground(new Color(153, 204, 255));
@@ -26,7 +31,7 @@ public class panelDos extends JPanel {
 		button.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 18));
 		add(button);
 		
-		JButton btnPedirColor = new JButton("Pedir Color");
+		btnPedirColor = new JButton("Pedir Color");
 		btnPedirColor.setForeground(new Color(0, 0, 102));
 		btnPedirColor.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnPedirColor.setBackground(new Color(153, 204, 255));
@@ -34,7 +39,7 @@ public class panelDos extends JPanel {
 		btnPedirColor.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 18));
 		add(btnPedirColor);
 		
-		JButton btnBarajarPilas = new JButton("Barajar Pilas");
+		btnBarajarPilas = new JButton("Barajar Pilas");
 		btnBarajarPilas.setForeground(new Color(0, 0, 102));
 		btnBarajarPilas.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnBarajarPilas.setBackground(new Color(153, 204, 255));
@@ -42,7 +47,7 @@ public class panelDos extends JPanel {
 		btnBarajarPilas.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 18));
 		add(btnBarajarPilas);
 		
-		JButton btnBorrarcolor = new JButton("Borrar Color");
+		btnBorrarcolor = new JButton("Borrar Color");
 		btnBorrarcolor.setForeground(new Color(0, 0, 102));
 		btnBorrarcolor.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		btnBorrarcolor.setBackground(new Color(153, 204, 255));
