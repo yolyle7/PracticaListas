@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import utiles.Constantes;
+
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import java.awt.Color;
@@ -52,9 +55,8 @@ public class desplegablePedirColor extends JFrame {
 		panel.setLayout(null);
 		panel.setBackground(new Color(153, 204, 255));
 		
-		JComboBox comboBox = new JComboBox();
-		//estos colores son de ejemplo para probar como queda. 
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Rojo", "Azul", "Verde", "Amarillo", "Negro"}));
+		JComboBox comboBox = new JComboBox(); 
+		comboBox.setModel(new DefaultComboBoxModel(new Constantes().colores));
 		comboBox.setName("");
 		comboBox.setBackground(new Color(245, 255, 250));
 		comboBox.setForeground(new Color(0, 0, 102));
