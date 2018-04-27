@@ -15,6 +15,7 @@ import java.awt.Color;
 import javax.swing.border.BevelBorder;
 import java.awt.Font;
 import javax.swing.DefaultComboBoxModel;
+import java.awt.ComponentOrientation;
 
 public class desplegablePedirColor extends JFrame {
 
@@ -55,7 +56,7 @@ public class desplegablePedirColor extends JFrame {
 		panel.setLayout(null);
 		panel.setBackground(new Color(153, 204, 255));
 		
-		JComboBox comboBox = new JComboBox(); 
+		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new Constantes().colores));
 		comboBox.setName("");
 		comboBox.setBackground(new Color(245, 255, 250));
