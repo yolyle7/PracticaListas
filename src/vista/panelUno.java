@@ -77,7 +77,7 @@ public class panelUno extends JPanel {
 		JLabel lblIconoMonedas = new JLabel("");
 		lblIconoMonedas.setBounds(27, 377, 67, 63);
 
-		ImageIcon imgIcon = new ImageIcon("D:/Desktop/modulo/Primero/Programación/workspaceTerEval/PracticaListas/src/img/iconoMonedas.png");
+		ImageIcon imgIcon = new ImageIcon("img/iconoMonedas.png");
 		Image imgEscalada = imgIcon.getImage().getScaledInstance(lblIconoMonedas.getWidth(),
 				lblIconoMonedas.getHeight(), Image.SCALE_SMOOTH);
 		Icon iconoEscalado = new ImageIcon(imgEscalada);
