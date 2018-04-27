@@ -58,11 +58,7 @@ public class desplegablePedirColor extends JFrame {
 		panel.setLayout(null);
 		panel.setBackground(new Color(153, 204, 255));
 		
-<<<<<<< HEAD
-		JComboBox comboBox = new JComboBox();
-=======
 		comboBox = new JComboBox(); 
->>>>>>> refs/remotes/upstream/master
 		comboBox.setModel(new DefaultComboBoxModel(new Constantes().colores));
 		comboBox.setName("");
 		comboBox.setBackground(new Color(245, 255, 250));
