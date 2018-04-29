@@ -1,6 +1,10 @@
 package logica;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+import javax.swing.JLabel;
 
 import modelo.Colores;
 
@@ -66,5 +70,42 @@ public class Acciones implements Accionable{
 		this.dato.getLista().borrarColores(this.dato.getLista().busquedaColor(color));
 		
 	}
+	
+	public LinkedList<JLabel> generarColoresCola(){
+		LinkedList<Colores> cola= this.dato.generarCola();
+		LinkedList<JLabel> colaVista= new LinkedList<JLabel>();
+		for (Iterator iterator = cola.iterator(); iterator.hasNext();) {
+			Colores color = (Colores) iterator.next();
+			JLabel colorVista= new JLabel();
+			colorVista.setBackground(color.getColor());
+		}
+		return colaVista;
+	}
+
+	public int getRonda() {
+		return ronda;
+	}
+
+	public void setRonda(int ronda) {
+		this.ronda = ronda;
+	}
+
+	public Datos getDato() {
+		return dato;
+	}
+
+	public void setDato(Datos dato) {
+		this.dato = dato;
+	}
+
+	public ArrayList<Colores> getRepetidos() {
+		return repetidos;
+	}
+
+	public void setRepetidos(ArrayList<Colores> repetidos) {
+		this.repetidos = repetidos;
+	}
+	
+	
 
 }

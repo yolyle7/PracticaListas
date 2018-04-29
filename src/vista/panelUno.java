@@ -6,6 +6,7 @@ import javax.swing.JTextField;
 
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.util.LinkedList;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -120,8 +121,8 @@ public class panelUno extends JPanel {
 		return cola;
 	}
 
-	public void setCambiarCola(JPanel cola) {
-		this.cola = cola;
+	public void setCambiarCola(LinkedList<JLabel>colaVista) {
+		this.cola.add(colaVista);
 	}
 
 	public JPanel getCogerPilaUno() {

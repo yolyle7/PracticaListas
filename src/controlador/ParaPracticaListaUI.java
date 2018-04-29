@@ -3,10 +3,13 @@ package controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import logica.Acciones;
 import vista.desplegablePedirColor;
 import vista.vistaUI;
 
 public class ParaPracticaListaUI extends vistaUI{
+	
+	private Acciones acciones= new Acciones();
 
 	public ParaPracticaListaUI(){
 		
@@ -17,8 +20,10 @@ public class ParaPracticaListaUI extends vistaUI{
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				
+				vistaDos.setVisible(true);
+				vistaUno.setVisible(false);
+				vistaDos.getCogerCentro().setCambiarCola(acciones.getDato().generarCola());
+
 			}
 		});
 	}
