@@ -16,7 +16,7 @@ public class Acciones implements Accionable{
 		seleccionarColor();
 		pedirColor();
 		barajar();
-		borrarColor();
+		borrarColor(Colores.amarillo);
 		
 	}
 
@@ -48,21 +48,22 @@ public class Acciones implements Accionable{
 		}
 	}
 
+	//no está hecho
 	@Override
-	public void pedirColor() {
-		// TODO Auto-generated method stub
+	public Colores pedirColor() {
+		return Colores.amarillo;
 		
 	}
 
 	@Override
 	public void barajar() {
-		// TODO Auto-generated method stub
+		this.dato.equilibrarPilas();
 		
 	}
 
 	@Override
-	public void borrarColor() {
-		// TODO Auto-generated method stub
+	public void borrarColor(Colores color) {
+		this.dato.getLista().borrarColores(this.dato.getLista().busquedaColor(color));
 		
 	}
 
