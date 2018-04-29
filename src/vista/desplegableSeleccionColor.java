@@ -66,27 +66,27 @@ public class desplegableSeleccionColor extends JFrame {
 		panel.add(comboBox);
 	}
 
-	public JPanel getContentPane() {
+	public JPanel getCogerContentPane() {
 		return contentPane;
 	}
 
-	public void setContentPane(JPanel contentPane) {
+	public void setCambiarContentPane(JPanel contentPane) {
 		this.contentPane = contentPane;
 	}
 
-	public JComboBox getComboBox() {
+	public JComboBox getCogerComboBox() {
 		return comboBox;
 	}
 
-	public void setComboBox(JComboBox comboBox) {
+	public void setCambiarComboBox(JComboBox comboBox) {
 		this.comboBox = comboBox;
 	}
 
-	public JPanel getPanel() {
+	public JPanel getCogerPanel() {
 		return panel;
 	}
 
-	public void setPanel(JPanel panel) {
+	public void setCambiarPanel(JPanel panel) {
 		this.panel = panel;
 	}
 	

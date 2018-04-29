@@ -66,4 +66,30 @@ public class vistaDos extends JFrame {
 		contentPane.add(centro);
 	}
 
+	public JPanel getCogerContentPane() {
+		return contentPane;
+	}
+
+	public void setCambiarContentPane(JPanel contentPane) {
+		this.contentPane = contentPane;
+	}
+
+	public panelUno getCogerCentro() {
+		return centro;
+	}
+
+	public void setCambiarCentro(panelUno centro) {
+		this.centro = centro;
+	}
+
+	public panelDos getCogerCabecera() {
+		return cabecera;
+	}
+
+	public void setCambiarCabecera(panelDos cabecera) {
+		this.cabecera = cabecera;
+	}
+	
+	
+
 }

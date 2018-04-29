@@ -44,20 +44,20 @@ public class desplegablePedirColor extends JFrame {
 	public desplegablePedirColor() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 397, 337);
-		contentPane = new JPanel();
+		JPanel contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 153));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		panel = new JPanel();
+		JPanel panel = new JPanel();
 		panel.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
 		panel.setBounds(37, 13, 290, 58);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		panel.setBackground(new Color(153, 204, 255));
 		
-		comboBox = new JComboBox(); 
+		JComboBox comboBox = new JComboBox(); 
 		comboBox.setModel(new DefaultComboBoxModel(new Constantes().colores));
 		comboBox.setName("");
 		comboBox.setBackground(new Color(245, 255, 250));
@@ -68,27 +68,27 @@ public class desplegablePedirColor extends JFrame {
 		panel.add(comboBox);
 	}
 
-	public JPanel getContentPane() {
+	public JPanel getCogerContentPane() {
 		return contentPane;
 	}
 
-	public void setContentPane(JPanel contentPane) {
+	public void setCambiarContentPane(JPanel contentPane) {
 		this.contentPane = contentPane;
 	}
 
-	public JComboBox getComboBox() {
+	public JComboBox getCogerComboBox() {
 		return comboBox;
 	}
 
-	public void setComboBox(JComboBox comboBox) {
+	public void setCambiarComboBox(JComboBox comboBox) {
 		this.comboBox = comboBox;
 	}
 
-	public JPanel getPanel() {
+	public JPanel getCogerPanel() {
 		return panel;
 	}
 
-	public void setPanel(JPanel panel) {
+	public void setCambiarPanel(JPanel panel) {
 		this.panel = panel;
 	}
 	

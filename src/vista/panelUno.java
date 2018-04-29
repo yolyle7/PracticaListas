@@ -100,91 +100,91 @@ public class panelUno extends JPanel {
 
 	}
 
-	public JTextField getTextField() {
+	public JTextField getCogerTextField() {
 		return textField;
 	}
 
-	public void setTextField(JTextField textField) {
+	public void setCambiarTextField(JTextField textField) {
 		this.textField = textField;
 	}
 
-	public JTextField getTxtMensaje() {
+	public JTextField getCogerTxtMensaje() {
 		return txtMensaje;
 	}
 
-	public void setTxtMensaje(JTextField txtMensaje) {
+	public void setCambiarTxtMensaje(JTextField txtMensaje) {
 		this.txtMensaje = txtMensaje;
 	}
 
-	public JPanel getCola() {
+	public JPanel getCogerCola() {
 		return cola;
 	}
 
-	public void setCola(JPanel cola) {
+	public void setCambiarCola(JPanel cola) {
 		this.cola = cola;
 	}
 
-	public JPanel getPilaUno() {
+	public JPanel getCogerPilaUno() {
 		return pilaUno;
 	}
 
-	public void setPilaUno(JPanel pilaUno) {
+	public void setCambiarPilaUno(JPanel pilaUno) {
 		this.pilaUno = pilaUno;
 	}
 
-	public JPanel getPilaDos() {
+	public JPanel getCogerPilaDos() {
 		return pilaDos;
 	}
 
-	public void setPilaDos(JPanel pilaDos) {
+	public void setCambiarPilaDos(JPanel pilaDos) {
 		this.pilaDos = pilaDos;
 	}
 
-	public JPanel getLista() {
+	public JPanel getCogerLista() {
 		return lista;
 	}
 
-	public void setLista(JPanel lista) {
+	public void setCambiarLista(JPanel lista) {
 		this.lista = lista;
 	}
 
-	public JLabel getLblCola() {
+	public JLabel getCogerLblCola() {
 		return lblCola;
 	}
 
-	public void setLblCola(JLabel lblCola) {
+	public void setCambiarLblCola(JLabel lblCola) {
 		this.lblCola = lblCola;
 	}
 
-	public JLabel getLblPilaUno() {
+	public JLabel getCogerLblPilaUno() {
 		return lblPilaUno;
 	}
 
-	public void setLblPilaUno(JLabel lblPilaUno) {
+	public void setCambiarLblPilaUno(JLabel lblPilaUno) {
 		this.lblPilaUno = lblPilaUno;
 	}
 
-	public JLabel getLblPilaDos() {
+	public JLabel getCogerLblPilaDos() {
 		return lblPilaDos;
 	}
 
-	public void setLblPilaDos(JLabel lblPilaDos) {
+	public void setCambiarLblPilaDos(JLabel lblPilaDos) {
 		this.lblPilaDos = lblPilaDos;
 	}
 
-	public JLabel getLblLista() {
+	public JLabel getCogerLblLista() {
 		return lblLista;
 	}
 
-	public void setLblLista(JLabel lblLista) {
+	public void setCambiarLblLista(JLabel lblLista) {
 		this.lblLista = lblLista;
 	}
 
-	public JLabel getLblIconoMonedas() {
+	public JLabel getCogerLblIconoMonedas() {
 		return lblIconoMonedas;
 	}
 
-	public void setLblIconoMonedas(JLabel lblIconoMonedas) {
+	public void setCambiarLblIconoMonedas(JLabel lblIconoMonedas) {
 		this.lblIconoMonedas = lblIconoMonedas;
 	}
 	

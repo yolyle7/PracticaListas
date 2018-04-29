@@ -57,4 +57,38 @@ public class panelDos extends JPanel {
 
 	}
 
+	public JButton getCogerButton() {
+		return button;
+	}
+
+	public void setCambiarButton(JButton button) {
+		this.button = button;
+	}
+
+	public JButton getCogerBtnPedirColor() {
+		return btnPedirColor;
+	}
+
+	public void setCambiarBtnPedirColor(JButton btnPedirColor) {
+		this.btnPedirColor = btnPedirColor;
+	}
+
+	public JButton getCogerBtnBarajarPilas() {
+		return btnBarajarPilas;
+	}
+
+	public void setCambiarBtnBarajarPilas(JButton btnBarajarPilas) {
+		this.btnBarajarPilas = btnBarajarPilas;
+	}
+
+	public JButton getCogerBtnBorrarcolor() {
+		return btnBorrarcolor;
+	}
+
+	public void setCambiarBtnBorrarcolor(JButton btnBorrarcolor) {
+		this.btnBorrarcolor = btnBorrarcolor;
+	}
+	
+	
+
 }
