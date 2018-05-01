@@ -39,7 +39,7 @@ public class desplegableSeleccionColor extends JFrame {
 	 * Create the frame.
 	 */
 	public desplegableSeleccionColor() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 229, 208);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 153));
@@ -66,27 +66,27 @@ public class desplegableSeleccionColor extends JFrame {
 		panel.add(comboBox);
 	}
 
-	public JPanel getContentPane() {
+	public JPanel getCogerContentPane() {
 		return contentPane;
 	}
 
-	public void setContentPane(JPanel contentPane) {
+	public void setCambiarContentPane(JPanel contentPane) {
 		this.contentPane = contentPane;
 	}
 
-	public JComboBox getComboBox() {
+	public JComboBox getCogerComboBox() {
 		return comboBox;
 	}
 
-	public void setComboBox(JComboBox comboBox) {
+	public void setCambiarComboBox(JComboBox comboBox) {
 		this.comboBox = comboBox;
 	}
 
-	public JPanel getPanel() {
+	public JPanel getCogerPanel() {
 		return panel;
 	}
 
-	public void setPanel(JPanel panel) {
+	public void setCambiarPanel(JPanel panel) {
 		this.panel = panel;
 	}
 	

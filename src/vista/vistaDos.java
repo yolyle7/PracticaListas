@@ -56,7 +56,7 @@ public class vistaDos extends JFrame {
 		cabecera = new panelDos();
 		cabecera.setBackground(new Color(255, 255, 153));
 		cabecera.setBorder(new BevelBorder(BevelBorder.RAISED, null, null, null, null));
-		cabecera.setBounds(5, 10, 769, 69);
+		cabecera.setBounds(5, 10, 769, 70);
 		contentPane.add(cabecera);
 
 		centro = new panelUno();
@@ -65,5 +65,31 @@ public class vistaDos extends JFrame {
 		centro.setBounds(5, 92, 769, 458);
 		contentPane.add(centro);
 	}
+
+	public JPanel getCogerContentPane() {
+		return contentPane;
+	}
+
+	public void setCambiarContentPane(JPanel contentPane) {
+		this.contentPane = contentPane;
+	}
+
+	public panelUno getCogerCentro() {
+		return centro;
+	}
+
+	public void setCambiarCentro(panelUno centro) {
+		this.centro = centro;
+	}
+
+	public panelDos getCogerCabecera() {
+		return cabecera;
+	}
+
+	public void setCambiarCabecera(panelDos cabecera) {
+		this.cabecera = cabecera;
+	}
+	
+	
 
 }

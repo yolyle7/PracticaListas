@@ -6,6 +6,7 @@ import javax.swing.JTextField;
 
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.util.LinkedList;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -35,7 +36,7 @@ public class panelUno extends JPanel {
 
 		cola = new JPanel();
 		cola.setBackground(Color.WHITE);
-		cola.setBounds(162, 51, 393, 25);
+		cola.setBounds(162, 50, 400, 35);
 		add(cola);
 
 		pilaUno = new JPanel();
@@ -56,7 +57,7 @@ public class panelUno extends JPanel {
 		lblCola = new JLabel("Cola");
 		lblCola.setForeground(new Color(0, 0, 102));
 		lblCola.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 16));
-		lblCola.setBounds(49, 51, 67, 25);
+		lblCola.setBounds(49, 60, 67, 25);
 		add(lblCola);
 
 		lblPilaUno = new JLabel("PilaUno");
@@ -80,6 +81,7 @@ public class panelUno extends JPanel {
 		textField = new JTextField();
 		textField.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 16));
 		textField.setBounds(103, 398, 171, 25);
+		textField.setEnabled(false);
 		add(textField);
 		textField.setColumns(10);
 
@@ -95,98 +97,98 @@ public class panelUno extends JPanel {
 
 		txtMensaje = new JTextField();
 		txtMensaje.setBounds(376, 400, 334, 40);
+		txtMensaje.setEnabled(false);
 		add(txtMensaje);
 		txtMensaje.setColumns(10);
 
 	}
 
-	public JTextField getTextField() {
+	public JTextField getCogerTextField() {
 		return textField;
 	}
 
-	public void setTextField(JTextField textField) {
+	public void setCambiarTextField(JTextField textField) {
 		this.textField = textField;
 	}
 
-	public JTextField getTxtMensaje() {
+	public JTextField getCogerTxtMensaje() {
 		return txtMensaje;
 	}
 
-	public void setTxtMensaje(JTextField txtMensaje) {
+	public void setCambiarTxtMensaje(JTextField txtMensaje) {
 		this.txtMensaje = txtMensaje;
 	}
 
-	public JPanel getCola() {
+	public JPanel getCogerCola() {
 		return cola;
 	}
 
-	public void setCola(JPanel cola) {
-		this.cola = cola;
+	public void setCambiarCola(JPanel cola) {
+		this.cola=cola;
 	}
 
-	public JPanel getPilaUno() {
+	public JPanel getCogerPilaUno() {
 		return pilaUno;
 	}
 
-	public void setPilaUno(JPanel pilaUno) {
+	public void setCambiarPilaUno(JPanel pilaUno) {
 		this.pilaUno = pilaUno;
 	}
 
-	public JPanel getPilaDos() {
+	public JPanel getCogerPilaDos() {
 		return pilaDos;
 	}
 
-	public void setPilaDos(JPanel pilaDos) {
+	public void setCambiarPilaDos(JPanel pilaDos) {
 		this.pilaDos = pilaDos;
 	}
 
-	public JPanel getLista() {
+	public JPanel getCogerLista() {
 		return lista;
 	}
 
-	public void setLista(JPanel lista) {
+	public void setCambiarLista(JPanel lista) {
 		this.lista = lista;
 	}
 
-	public JLabel getLblCola() {
+	public JLabel getCogerLblCola() {
 		return lblCola;
 	}
 
-	public void setLblCola(JLabel lblCola) {
+	public void setCambiarLblCola(JLabel lblCola) {
 		this.lblCola = lblCola;
 	}
 
-	public JLabel getLblPilaUno() {
+	public JLabel getCogerLblPilaUno() {
 		return lblPilaUno;
 	}
 
-	public void setLblPilaUno(JLabel lblPilaUno) {
+	public void setCambiarLblPilaUno(JLabel lblPilaUno) {
 		this.lblPilaUno = lblPilaUno;
 	}
 
-	public JLabel getLblPilaDos() {
+	public JLabel getCogerLblPilaDos() {
 		return lblPilaDos;
 	}
 
-	public void setLblPilaDos(JLabel lblPilaDos) {
+	public void setCambiarLblPilaDos(JLabel lblPilaDos) {
 		this.lblPilaDos = lblPilaDos;
 	}
 
-	public JLabel getLblLista() {
+	public JLabel getCogerLblLista() {
 		return lblLista;
 	}
 
-	public void setLblLista(JLabel lblLista) {
+	public void setCambiarLblLista(JLabel lblLista) {
 		this.lblLista = lblLista;
 	}
 
-	public JLabel getLblIconoMonedas() {
+	public JLabel getCogerLblIconoMonedas() {
 		return lblIconoMonedas;
 	}
 
-	public void setLblIconoMonedas(JLabel lblIconoMonedas) {
+	public void setCambiarLblIconoMonedas(JLabel lblIconoMonedas) {
 		this.lblIconoMonedas = lblIconoMonedas;
 	}
-	
 	
 }

@@ -82,35 +82,35 @@ public class vistaUno extends JFrame {
 
 	}
 
-	public JPanel getContentPane() {
+	public JPanel getCogerContentPane() {
 		return contentPane;
 	}
 
-	public void setContentPane(JPanel contentPane) {
+	public void setCambiarContentPane(JPanel contentPane) {
 		this.contentPane = contentPane;
 	}
 
-	public JButton getBtnJugar() {
+	public JButton getCogerBtnJugar() {
 		return btnJugar;
 	}
 
-	public void setBtnJugar(JButton btnJugar) {
+	public void setCambiarBtnJugar(JButton btnJugar) {
 		this.btnJugar = btnJugar;
 	}
 
-	public JLabel getLblIcono() {
+	public JLabel getCogerLblIcono() {
 		return lblIcono;
 	}
 
-	public void setLblIcono(JLabel lblIcono) {
+	public void setCambiarLblIcono(JLabel lblIcono) {
 		this.lblIcono = lblIcono;
 	}
 
-	public JLabel getLblJuegoPicoli() {
+	public JLabel getCogerLblJuegoPicoli() {
 		return lblJuegoPicoli;
 	}
 
-	public void setLblJuegoPicoli(JLabel lblJuegoPicoli) {
+	public void setCambiarLblJuegoPicoli(JLabel lblJuegoPicoli) {
 		this.lblJuegoPicoli = lblJuegoPicoli;
 	}
 	

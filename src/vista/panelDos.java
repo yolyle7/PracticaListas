@@ -10,7 +10,7 @@ import javax.swing.SwingConstants;
 
 public class panelDos extends JPanel {
 
-	private JButton button;
+	private JButton btnSeleccionColor;
 	private JButton btnPedirColor;
 	private JButton btnBarajarPilas;
 	private JButton btnBorrarcolor;
@@ -23,13 +23,13 @@ public class panelDos extends JPanel {
 		setBorder(null);
 		setLayout(null);
 		
-		button = new JButton("Seleccion Color");
-		button.setForeground(new Color(0, 0, 102));
-		button.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
-		button.setBackground(new Color(153, 204, 255));
-		button.setBounds(55, 11, 149, 45);
-		button.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 18));
-		add(button);
+		btnSeleccionColor = new JButton("Seleccion Color");
+		btnSeleccionColor.setForeground(new Color(0, 0, 102));
+		btnSeleccionColor.setBorder(new BevelBorder(BevelBorder.LOWERED, null, null, null, null));
+		btnSeleccionColor.setBackground(new Color(153, 204, 255));
+		btnSeleccionColor.setBounds(55, 11, 149, 45);
+		btnSeleccionColor.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 18));
+		add(btnSeleccionColor);
 		
 		btnPedirColor = new JButton("Pedir Color");
 		btnPedirColor.setForeground(new Color(0, 0, 102));
@@ -56,5 +56,39 @@ public class panelDos extends JPanel {
 		add(btnBorrarcolor);
 
 	}
+
+	public JButton getCogerBtnSeleccionColor() {
+		return btnSeleccionColor;
+	}
+
+	public void setCambiarBtnSeleccionColor(JButton btnSeleccionColor) {
+		this.btnSeleccionColor = btnSeleccionColor;
+	}
+
+	public JButton getCogerBtnPedirColor() {
+		return btnPedirColor;
+	}
+
+	public void setCambiarBtnPedirColor(JButton btnPedirColor) {
+		this.btnPedirColor = btnPedirColor;
+	}
+
+	public JButton getCogerBtnBarajarPilas() {
+		return btnBarajarPilas;
+	}
+
+	public void setCambiarBtnBarajarPilas(JButton btnBarajarPilas) {
+		this.btnBarajarPilas = btnBarajarPilas;
+	}
+
+	public JButton getCogerBtnBorrarcolor() {
+		return btnBorrarcolor;
+	}
+
+	public void setCambiarBtnBorrarcolor(JButton btnBorrarcolor) {
+		this.btnBorrarcolor = btnBorrarcolor;
+	}
+	
+	
 
 }
