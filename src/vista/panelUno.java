@@ -16,6 +16,15 @@ import java.awt.Color;
 public class panelUno extends JPanel {
 	private JTextField textField;
 	private JTextField txtMensaje;
+	private JPanel cola;
+	private JPanel pilaUno;
+	private JPanel pilaDos;
+	private JPanel lista;
+	private JLabel lblCola;
+	private JLabel lblPilaUno;
+	private JLabel lblPilaDos;
+	private JLabel lblLista;
+	private JLabel lblIconoMonedas;
 
 	/**
 	 * Create the panel.
@@ -24,45 +33,45 @@ public class panelUno extends JPanel {
 		setBackground(new Color(255, 255, 153));
 		setLayout(null);
 
-		JPanel cola = new JPanel();
+		cola = new JPanel();
 		cola.setBackground(Color.WHITE);
 		cola.setBounds(162, 51, 393, 25);
 		add(cola);
 
-		JPanel pilaUno = new JPanel();
+		pilaUno = new JPanel();
 		pilaUno.setBackground(Color.WHITE);
 		pilaUno.setBounds(162, 113, 322, 25);
 		add(pilaUno);
 
-		JPanel pilaDos = new JPanel();
+		pilaDos = new JPanel();
 		pilaDos.setBackground(Color.WHITE);
 		pilaDos.setBounds(162, 149, 322, 25);
 		add(pilaDos);
 
-		JPanel lista = new JPanel();
+		lista = new JPanel();
 		lista.setBackground(Color.WHITE);
 		lista.setBounds(183, 221, 449, 125);
 		add(lista);
 
-		JLabel lblCola = new JLabel("Cola");
+		lblCola = new JLabel("Cola");
 		lblCola.setForeground(new Color(0, 0, 102));
 		lblCola.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 16));
 		lblCola.setBounds(49, 51, 67, 25);
 		add(lblCola);
 
-		JLabel lblPilaUno = new JLabel("PilaUno");
+		lblPilaUno = new JLabel("PilaUno");
 		lblPilaUno.setForeground(new Color(0, 0, 102));
 		lblPilaUno.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 16));
 		lblPilaUno.setBounds(49, 113, 67, 25);
 		add(lblPilaUno);
 
-		JLabel lblPilaDos = new JLabel("PilaDos");
+		lblPilaDos = new JLabel("PilaDos");
 		lblPilaDos.setForeground(new Color(0, 0, 102));
 		lblPilaDos.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 16));
 		lblPilaDos.setBounds(49, 149, 67, 25);
 		add(lblPilaDos);
 
-		JLabel lblLista = new JLabel("Lista");
+		lblLista = new JLabel("Lista");
 		lblLista.setForeground(new Color(0, 0, 102));
 		lblLista.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 16));
 		lblLista.setBounds(119, 274, 54, 25);
@@ -74,7 +83,7 @@ public class panelUno extends JPanel {
 		add(textField);
 		textField.setColumns(10);
 
-		JLabel lblIconoMonedas = new JLabel("");
+		lblIconoMonedas = new JLabel("");
 		lblIconoMonedas.setBounds(27, 377, 67, 63);
 
 		ImageIcon imgIcon = new ImageIcon("img/iconoMonedas.png");
@@ -90,4 +99,94 @@ public class panelUno extends JPanel {
 		txtMensaje.setColumns(10);
 
 	}
+
+	public JTextField getTextField() {
+		return textField;
+	}
+
+	public void setTextField(JTextField textField) {
+		this.textField = textField;
+	}
+
+	public JTextField getTxtMensaje() {
+		return txtMensaje;
+	}
+
+	public void setTxtMensaje(JTextField txtMensaje) {
+		this.txtMensaje = txtMensaje;
+	}
+
+	public JPanel getCola() {
+		return cola;
+	}
+
+	public void setCola(JPanel cola) {
+		this.cola = cola;
+	}
+
+	public JPanel getPilaUno() {
+		return pilaUno;
+	}
+
+	public void setPilaUno(JPanel pilaUno) {
+		this.pilaUno = pilaUno;
+	}
+
+	public JPanel getPilaDos() {
+		return pilaDos;
+	}
+
+	public void setPilaDos(JPanel pilaDos) {
+		this.pilaDos = pilaDos;
+	}
+
+	public JPanel getLista() {
+		return lista;
+	}
+
+	public void setLista(JPanel lista) {
+		this.lista = lista;
+	}
+
+	public JLabel getLblCola() {
+		return lblCola;
+	}
+
+	public void setLblCola(JLabel lblCola) {
+		this.lblCola = lblCola;
+	}
+
+	public JLabel getLblPilaUno() {
+		return lblPilaUno;
+	}
+
+	public void setLblPilaUno(JLabel lblPilaUno) {
+		this.lblPilaUno = lblPilaUno;
+	}
+
+	public JLabel getLblPilaDos() {
+		return lblPilaDos;
+	}
+
+	public void setLblPilaDos(JLabel lblPilaDos) {
+		this.lblPilaDos = lblPilaDos;
+	}
+
+	public JLabel getLblLista() {
+		return lblLista;
+	}
+
+	public void setLblLista(JLabel lblLista) {
+		this.lblLista = lblLista;
+	}
+
+	public JLabel getLblIconoMonedas() {
+		return lblIconoMonedas;
+	}
+
+	public void setLblIconoMonedas(JLabel lblIconoMonedas) {
+		this.lblIconoMonedas = lblIconoMonedas;
+	}
+	
+	
 }
