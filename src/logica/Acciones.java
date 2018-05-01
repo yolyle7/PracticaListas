@@ -17,22 +17,10 @@ import utiles.Constantes;
 
 public class Acciones implements Accionable{
 	
-	private int ronda =0;
 	private Datos dato = new Datos();
-	private ArrayList<Colores> repetidos = new ArrayList<Colores>();
-	
 
 	@Override
-	public void accionPrincipal() {
-		seleccionarColor();
-		pedirColor();
-		barajar();
-		borrarColor(Colores.amarillo);
-		
-	}
-
-	@Override
-	public void seleccionarColor() {
+	public void seleccionarColor(ArrayList<Colores> repetidos,int ronda) {
 		Colores colorDos;
 		Colores colorTres;
 		Colores colorUno = dato.sortearColor(repetidos);
@@ -47,14 +35,14 @@ public class Acciones implements Accionable{
 		
 		
 		
-		aumentarRonda(repetidos);
+		aumentarRonda(repetidos,ronda);
 	}
 
-	public void aumentarRonda(ArrayList<Colores> repetidos) {
-		this.ronda++;
+	public void aumentarRonda(ArrayList<Colores> repetidos,int ronda) {
+		ronda++;
 		System.out.println(ronda);
-		if(this.ronda==5){
-			this.ronda=0;
+		if(ronda==5){
+			ronda=0;
 			repetidos.clear();
 		}
 	}
@@ -62,8 +50,7 @@ public class Acciones implements Accionable{
 	//no está hecho
 	@Override
 	public Colores pedirColor() {
-		return Colores.amarillo;
-		
+		return null;
 	}
 
 	@Override
@@ -89,28 +76,12 @@ public class Acciones implements Accionable{
 		return colaVista;
 	}
 
-	public int getRonda() {
-		return ronda;
-	}
-
-	public void setRonda(int ronda) {
-		this.ronda = ronda;
-	}
-
 	public Datos getDato() {
 		return dato;
 	}
 
 	public void setDato(Datos dato) {
 		this.dato = dato;
-	}
-
-	public ArrayList<Colores> getRepetidos() {
-		return repetidos;
-	}
-
-	public void setRepetidos(ArrayList<Colores> repetidos) {
-		this.repetidos = repetidos;
 	}
 	
 	public void crearColaJlabel(JPanel panelito){
@@ -129,13 +100,16 @@ public class Acciones implements Accionable{
 		}
 	}
 	
-	/*public void actualizarColoresColaJlabel(JPanel panelito){
-		int i=0;
-		for (Iterator iterator = this.dato.getCola().getCola().iterator(); iterator.hasNext();) {
-			Colores color = (Colores) iterator.next();
-			panelito.getComponent(i).setBackground(color.getColor());	
-			i++;
+	public Colores convertirColorDesplegable(String colorDesplegable){
+		
+		switch(colorDesplegable){
+		case "azul": return Colores.azul;
+		case "rojo": return Colores.rojo;
+		case "amarillo": return Colores.amarillo;
+		case "naranja": return Colores.naranja;
+		case "verde": return Colores.verde;
 		}
-	}*/
+		return Colores.azul;
+	}
 
 }

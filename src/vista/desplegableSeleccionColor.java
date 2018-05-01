@@ -56,7 +56,7 @@ public class desplegableSeleccionColor extends JFrame {
 		
 		comboBox = new JComboBox();
 		//estos colores son de ejemplo para probar como queda. 
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Rojo", "Azul", "Verde"}));
+		//comboBox.setModel(new DefaultComboBoxModel(new String[] {"Rojo", "Azul", "Verde"}));
 		comboBox.setName("");
 		comboBox.setBackground(new Color(245, 255, 250));
 		comboBox.setForeground(new Color(0, 0, 102));
