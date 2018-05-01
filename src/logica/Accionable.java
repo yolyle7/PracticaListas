@@ -1,18 +1,15 @@
 package logica;
 
+import java.util.ArrayList;
+
 import modelo.Colores;
 
 public interface Accionable {
-
-	/**
-	 * Acción que llama a todas las demás y que es la única línea en el paraUI;
-	 */
-	public void accionPrincipal();
 	
 	/**
 	 * Usa el método de datos "sortearColor" para dar tres colores.
 	 */
-	public void seleccionarColor();
+	public void seleccionarColor(ArrayList<Colores> repetidos, int ronda);
 	
 	/**
 	 * Da a elegir los cinco colores sin tener en cuenta los repetidos. Solo se puede hacer cinco veces

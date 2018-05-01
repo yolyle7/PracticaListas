@@ -20,7 +20,7 @@ import java.awt.ComponentOrientation;
 public class desplegablePedirColor extends JFrame {
 
 	private JPanel contentPane;
-	private JComboBox comboBox;
+	private JComboBox <String> comboBox;
 	private JPanel panel;
 
 	/**
