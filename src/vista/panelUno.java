@@ -36,7 +36,7 @@ public class panelUno extends JPanel {
 
 		cola = new JPanel();
 		cola.setBackground(Color.WHITE);
-		cola.setBounds(162, 51, 393, 25);
+		cola.setBounds(162, 50, 400, 35);
 		add(cola);
 
 		pilaUno = new JPanel();
@@ -57,7 +57,7 @@ public class panelUno extends JPanel {
 		lblCola = new JLabel("Cola");
 		lblCola.setForeground(new Color(0, 0, 102));
 		lblCola.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 16));
-		lblCola.setBounds(49, 51, 67, 25);
+		lblCola.setBounds(49, 60, 67, 25);
 		add(lblCola);
 
 		lblPilaUno = new JLabel("PilaUno");
@@ -81,6 +81,7 @@ public class panelUno extends JPanel {
 		textField = new JTextField();
 		textField.setFont(new Font("Give You Glory", Font.BOLD | Font.ITALIC, 16));
 		textField.setBounds(103, 398, 171, 25);
+		textField.setEnabled(false);
 		add(textField);
 		textField.setColumns(10);
 
@@ -96,6 +97,7 @@ public class panelUno extends JPanel {
 
 		txtMensaje = new JTextField();
 		txtMensaje.setBounds(376, 400, 334, 40);
+		txtMensaje.setEnabled(false);
 		add(txtMensaje);
 		txtMensaje.setColumns(10);
 
@@ -121,8 +123,8 @@ public class panelUno extends JPanel {
 		return cola;
 	}
 
-	public void setCambiarCola(LinkedList<JLabel>colaVista) {
-		this.cola.add(colaVista);
+	public void setCambiarCola(JPanel cola) {
+		this.cola=cola;
 	}
 
 	public JPanel getCogerPilaUno() {
@@ -188,6 +190,5 @@ public class panelUno extends JPanel {
 	public void setCambiarLblIconoMonedas(JLabel lblIconoMonedas) {
 		this.lblIconoMonedas = lblIconoMonedas;
 	}
-	
 	
 }

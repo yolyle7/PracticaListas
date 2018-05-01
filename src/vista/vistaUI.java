@@ -14,22 +14,6 @@ public class vistaUI extends JFrame {
 	protected vistaDos vistaDos;
 
 	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					vistaUI frame = new vistaUI();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
 	 * Create the frame.
 	 */
 	public vistaUI() {
@@ -37,5 +21,31 @@ public class vistaUI extends JFrame {
 		vistaDos= new vistaDos();
 		
 	}
+
+	public JPanel getCogerContentPane() {
+		return contentPane;
+	}
+
+	public void setCambiarContentPane(JPanel contentPane) {
+		this.contentPane = contentPane;
+	}
+
+	public vistaUno getCogerVistaUno() {
+		return vistaUno;
+	}
+
+	public void setCambiarVistaUno(vistaUno vistaUno) {
+		this.vistaUno = vistaUno;
+	}
+
+	public vistaDos getCogerVistaDos() {
+		return vistaDos;
+	}
+
+	public void setCambiarVistaDos(vistaDos vistaDos) {
+		this.vistaDos = vistaDos;
+	}
+	
+	
 
 }

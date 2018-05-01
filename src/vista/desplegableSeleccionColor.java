@@ -39,7 +39,7 @@ public class desplegableSeleccionColor extends JFrame {
 	 * Create the frame.
 	 */
 	public desplegableSeleccionColor() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
 		setBounds(100, 100, 229, 208);
 		contentPane = new JPanel();
 		contentPane.setBackground(new Color(255, 255, 153));

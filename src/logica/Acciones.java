@@ -1,12 +1,19 @@
 package logica;
 
+import java.awt.Color;
+import java.awt.TextField;
 import java.util.ArrayList;
+
+import javax.swing.*;
 import java.util.Iterator;
 import java.util.LinkedList;
 
 import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.LineBorder;
 
 import modelo.Colores;
+import utiles.Constantes;
 
 public class Acciones implements Accionable{
 	
@@ -106,6 +113,29 @@ public class Acciones implements Accionable{
 		this.repetidos = repetidos;
 	}
 	
+	public void crearColaJlabel(JPanel panelito){
+		panelito.removeAll();
+		int comienzo=0;
+		for (int i = 0; i < Constantes.tamanioCola; i++) {
+			JLabel etiqueta= new JLabel();
+			etiqueta.setBounds(comienzo,0,Constantes.separacionEtiquetasCola,35);
+			comienzo+=Constantes.separacionEtiquetasCola;
+			etiqueta.setName(""+i);
+			etiqueta.setVisible(true);
+			etiqueta.setBackground(dato.getCola().getCola().get(i).getColor());
+			etiqueta.setBorder(new LineBorder(new Color(0, 0, 0), 2));
+			etiqueta.setOpaque(true);
+			panelito.add(etiqueta);
+		}
+	}
 	
+	/*public void actualizarColoresColaJlabel(JPanel panelito){
+		int i=0;
+		for (Iterator iterator = this.dato.getCola().getCola().iterator(); iterator.hasNext();) {
+			Colores color = (Colores) iterator.next();
+			panelito.getComponent(i).setBackground(color.getColor());	
+			i++;
+		}
+	}*/
 
 }
