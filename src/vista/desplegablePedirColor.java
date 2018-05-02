@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
+import modelo.Colores;
 import utiles.Constantes;
 
 import javax.swing.JCheckBox;
@@ -19,7 +20,7 @@ import javax.swing.DefaultComboBoxModel;
 public class desplegablePedirColor extends JFrame {
 
 	private JPanel contentPane;
-	private JComboBox <String> comboBox;
+	private JComboBox <Colores> comboBox= new JComboBox<>();
 	private JPanel panel;
 
 	/**
