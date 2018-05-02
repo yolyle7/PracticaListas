@@ -9,7 +9,7 @@ public interface Accionable {
 	/**
 	 * Usa el método de datos "sortearColor" para dar tres colores.
 	 */
-	public void seleccionarColor(ArrayList<Colores> repetidos, int ronda);
+	public ArrayList<Colores> seleccionarColor(ArrayList<Colores> repetidos, int ronda);
 	
 	/**
 	 * Da a elegir los cinco colores sin tener en cuenta los repetidos. Solo se puede hacer cinco veces

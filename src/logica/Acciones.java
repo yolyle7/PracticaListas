@@ -20,7 +20,10 @@ public class Acciones implements Accionable{
 	private Datos dato = new Datos();
 
 	@Override
-	public void seleccionarColor(ArrayList<Colores> repetidos,int ronda) {
+	public ArrayList<Colores> seleccionarColor(ArrayList<Colores> repetidos,int ronda) {
+		
+		ArrayList<Colores> sltColores = new ArrayList<Colores>();
+		
 		Colores colorDos;
 		Colores colorTres;
 		Colores colorUno = dato.sortearColor(repetidos);
@@ -34,13 +37,19 @@ public class Acciones implements Accionable{
 		}while((colorTres.equals(colorUno)) || (colorTres.equals(colorDos)));
 		
 		
+		sltColores.add(colorUno);
+		sltColores.add(colorDos);
+		sltColores.add(colorTres);
 		
 		aumentarRonda(repetidos,ronda);
+		
+		
+		
+		return sltColores;
 	}
 
 	public void aumentarRonda(ArrayList<Colores> repetidos,int ronda) {
 		ronda++;
-		System.out.println(ronda);
 		if(ronda==5){
 			ronda=0;
 			repetidos.clear();
@@ -98,18 +107,6 @@ public class Acciones implements Accionable{
 			etiqueta.setOpaque(true);
 			panelito.add(etiqueta);
 		}
-	}
-	
-	public Colores convertirColorDesplegable(String colorDesplegable){
-		
-		switch(colorDesplegable){
-		case "azul": return Colores.azul;
-		case "rojo": return Colores.rojo;
-		case "amarillo": return Colores.amarillo;
-		case "naranja": return Colores.naranja;
-		case "verde": return Colores.verde;
-		}
-		return Colores.azul;
 	}
 
 }
